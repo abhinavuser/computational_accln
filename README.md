@@ -2,14 +2,6 @@
 
 This repo contains the official implementation for the ICML 2021 paper [Accelerating Feedforward Computation via Parallel Nonlinear Equation Solving](https://arxiv.org/abs/2002.03629), 
 
-by [Yang Song](https://yang-song.github.io), [Chenlin Meng](https://chenlin9.github.io/), [Renjie Liao](http://www.cs.toronto.edu/~rjliao/), and [Stefano Ermon](https://cs.stanford.edu/~ermon/).
-
-----------------------
-
-We show that by viewing feedforward computation as a system of nonlinear equations, we can leverage parallel equation solvers  to improve its speed. Our methods are particularly efficient when the computation graph contains many long skip connections, and can be used to accelerate the backpropagation of recurrent neural networks, inference of DenseNets, and autoregressive sampling from MADE and PixelCNN++.
-
-![schematic](assets/schematic.png)
-
 ## Dependencies
 
 ```
@@ -56,21 +48,7 @@ After running `main.py`, we can retrieve and plot experimental results by runnin
 | MADE sampling | `made.ipynb` |
 | PixelCNN++ sampling | `pixelcnnpp.ipynb` |
 
-## Pretrained checkpoints and raw experimental data
 
-We provide pretrained checkpoints (in subfolder `runs/pretarined`) and raw experimental data (in subfolder `plot_data`) via the following link:
 
-https://drive.google.com/file/d/1cxV3pKUmLETt9veWRnEKt3SBCb-6sZDc/view?usp=sharing
 
-## Reference
-
-If you find the idea or code useful for your research, please consider citing
-```bibtex
-@inproceedings{song2021accelerating,
-  title={Accelerating Feedforward Computation via Parallel Nonlinear Equation Solving},
-  author={Song, Yang and Meng, Chenlin and Liao, Renjie, and Ermon, Stefano},
-  booktitle = {International Conference on Machine Learning (ICML)},
-  year={2021},
-}
-```
 
